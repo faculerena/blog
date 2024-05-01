@@ -3,6 +3,7 @@ tags:
   - Orga2
   - cheatsheet
   - exam
+title: Cheatsheet Parcial 1
 ---
 ## Useful Links
 
@@ -12,7 +13,7 @@ tags:
 	- [[intel_volume_2.pdf]]: This document contains the full instruction set reference, A-Z, in one volume. It describes the format of the instructions and provides reference pages for them. A functional cross-volume table of contents, references, and index allow for easy navigation of the instruction set reference.
 	- [Volume 3](https://cdrdv2.intel.com/v1/dl/getContent/671447) and [Volume 4](https://cdrdv2.intel.com/v1/dl/getContent/671098) are not needed for this exam. 
 - NASM documentation: [Link](https://www.nasm.us/doc/) 
-- SystemV ABI: [[sysv_abi.pdf]], my version: [[SystemV ABI]]
+- SystemV ABI: [[sysv_abi.pdf]], my version: [[systemv-abi]]
 - C Convention (Spanish, from a teacher): [[convencion_c.pdf]]
 
 

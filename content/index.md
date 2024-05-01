@@ -7,4 +7,4 @@ _Selama Ashal'anore_
 
 ## Organizacion del computador 2
 
-- [[Cheatsheet Parcial 1]]
+- [[cheatesheet-parcial-1]]
