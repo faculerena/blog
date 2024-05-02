@@ -12,4 +12,3 @@ _Selama Ashal'anore_
 
 - [[the-cpu-game|The CPU Game]]
 - [[ai-is-reinventing-compilers|AI is reinventing compilers]]
-- 
