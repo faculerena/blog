@@ -2,6 +2,9 @@
 title: The CPU Game
 tags:
   - "#project"
+  - "#post"
+aliases:
+  - The CPU Game
 ---
 # The CPU usage game
 [Repo](https://github.com/faculerena/cpu-usage-game)

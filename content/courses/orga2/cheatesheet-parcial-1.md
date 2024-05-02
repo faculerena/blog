@@ -4,6 +4,8 @@ tags:
   - cheatsheet
   - exam
 title: Cheatsheet Parcial 1
+aliases:
+  - Cheatsheet Parcial 1
 ---
 ## Useful Links
 
