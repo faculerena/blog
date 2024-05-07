@@ -163,6 +163,8 @@ mask_example: db 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x8
 ; and the third (0x20) is destroyed by this ┘
 ```
 
+>_ASCII diagram as Image: [[mask_example.png]]_
+
 Else, we set the value in the position given by the second half
 
 ```asm {3}
@@ -193,6 +195,7 @@ With that mask, the register changes to:
 
 Where the `0..0` are literal zeros and the other values are the ones that were in that position
 
+>_ASCII diagram as Image: [[register_after_mask_pshufb.png]]_
 #### Reminders
  - Use `0x80` to put a 0 (anything with position 7 as `bit[7]`, the most significant one, works) 
  - Use `0x0*` to put the value in `0x0*` into the position in the mask 
