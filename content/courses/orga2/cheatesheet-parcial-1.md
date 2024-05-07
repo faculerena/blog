@@ -17,6 +17,8 @@ aliases:
 - NASM documentation: [Link](https://www.nasm.us/doc/) 
 - SystemV ABI: [[sysv_abi.pdf]]
 - C Convention (Spanish, from a teacher): [[convencion_c.pdf]]
+- GDB cheatsheet (Spanish, from a teacher): [Link](https://macapiaggio.github.io/gdb-guide/)
+- Manejo de la pila en Intel (Stack considerations in Intel)(Spanish, from a teacher): [[manejo_pila_intel.pdf]]
 
 
 ## Arguments and register volatility in 64 bits
