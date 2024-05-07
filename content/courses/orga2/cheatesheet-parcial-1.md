@@ -43,7 +43,7 @@ When calling a function, ensure stack aligned to 16 Bytes.
 
 ## Prologue and epilogue
 
-```asm
+```asm {2-3, 7-8}
 function_definition:
 	PUSH rbp
 	MOV rbp, rsp
@@ -149,7 +149,7 @@ Given an xmm\* register (starting from the right side):
 
 Mask example (for `pshufb`) to destroy everything
 
-```nasm
+```nasm {7}
 ; reads in this order 
 ;                ------>
 ; so 0x00 position is destroyed by this ─┐
@@ -165,25 +165,37 @@ mask_example: db 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x8
 
 Else, we set the value in the position given by the second half
 
-```
+```nasm {3}
 ; reads in this order 
 ;                ------>
-
 mask_example: db 0x00, 0x80, 0x01, 0x80, 0x02, 0x80, 0x03, 0x80, 0x04, 0x80, 0x05, 0x80, 0x06, 0x80, 0x07, 0x80 
 ```
 
 With that mask, the register
 
-```
-; 127                                                                                                              0
-;   | 0xF0 | 0xE0 | 0xD0 | 0xC0 |0xB0 | 0xA0 | 0x90 | 0x80 | 0x70 | 0x60 | 0x50 | 0x40 | 0x30 | 0x20 | 0x10 | 0x00 |
+```nasm {2}
+; 127                                                                                                               0
+;   | 0xF0 | 0xE0 | 0xD0 | 0xC0 | 0xB0 | 0xA0 | 0x90 | 0x80 | 0x70 | 0x60 | 0x50 | 0x40 | 0x30 | 0x20 | 0x10 | 0x00 |
 ```
 
 ...now is
 
-```
-; 127                                                                                                              0
-;   | 0..0 | 0x07 | 0..0 | 0x06 | 0..0 | 0x05 | 0..0 | 0x04 | 0..0 | 0x03 | 0..0 | 0x02 | 0..0 | 0x01 | 0..0 | 0x00 |
+```nasm {1, 12}
+; | 0xF0 | 0xE0 | 0xD0 | 0xC0 | 0xB0 | 0xA0 | 0x90 | 0x80 | 0x70 | 0x60 | 0x50 | 0x40 | 0x30 | 0x20 | 0x10 | 0 00 |
+  │                                                       │  │      │      │      │      │      │      │      │    
+  └─────────────────These are not used────────────────────┘  │      │      │      │      │      │      │      │    
+            ┌────────────────────────────────────────────────┘      │      │      │      │      │      │      │    
+            │             ┌─────────────────────────────────────────┘      │      │      │      │      │      │      
+            │             │             ┌──────────────────────────────────┘      │      │      │      │      │    
+            │             │             │             ┌───────────────────────────┘      │      │      │      │     
+            │             │             │             │             ┌────────────────────┘      │      │      │     
+            │             │             │             │             │             ┌─────────────┘      │      │     
+            │             │             │             │             │             │             ┌──────┘      │    
+            ▼             ▼             ▼             ▼             ▼             ▼             ▼             ▼    
+  | 0..0 | 0x07 | 0..0 | 0x06 | 0..0 | 0x05 | 0..0 | 0x04 | 0..0 | 0x03 | 0..0 | 0x02 | 0..0 | 0x01 | 0..0 | 0x00 |
+     │             │             │            │             │             │             │              │           
+     └─────────────┴─────────────┴────────────┴─────────────┴─────────────┴─────────────┴──────────────┘           
+                    These are zero because in the mask they were 0x80                                             
 ```
 
 Where the `0..0` are literal zeros and the other values are the ones that were in that position
@@ -218,3 +230,8 @@ ELSE DEST[127:112] := DEST[127:112]
 
 The mask in blend is `imm8`, so for example `01010101` (read from right to left) would leave the odd values equal to `dest`, and even values replaced by `src`
 
+## NASM Size specifiers
+- BYTE | WORD | DWORD | QWORD | TWORD | OWORD | YWORD | ZWORD ([Source](https://www.nasm.us/xdoc/2.16.03/html/nasmdoc3.html#section-3.1)) 
+
+## Resolved problems
+- "Mirá que coincidencia" (greyscale pixels, blend, float to int, int to float, pack dword to word, word to byte): https://godbolt.org/z/Exaznxb78
