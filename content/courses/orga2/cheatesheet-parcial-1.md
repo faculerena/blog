@@ -236,4 +236,5 @@ The mask in blend is `imm8`, so for example `01010101` (read from right to left)
 
 ## Compare pixels
 (Tags: pixels, `pcmpgtb`)
+
 ![[compare_pixels.jpeg]]
