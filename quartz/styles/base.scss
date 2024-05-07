@@ -367,6 +367,7 @@ pre {
     & [data-highlighted-chars] {
       background-color: var(--highlight);
       border-radius: 5px;
+      color: var(--dark);
     }
 
     & > [data-line] {

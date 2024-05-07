@@ -173,7 +173,7 @@ mask_example: db 0x00, 0x80, 0x01, 0x80, 0x02, 0x80, 0x03, 0x80, 0x04, 0x80, 0x0
 
 With that mask, the register changes to:
 
-```nasm {1, 12}
+```nasm {1, 12} /These are not used/ /These are zero because in the mask they were 0x80/
   | 0xF0 | 0xE0 | 0xD0 | 0xC0 | 0xB0 | 0xA0 | 0x90 | 0x80 | 0x70 | 0x60 | 0x50 | 0x40 | 0x30 | 0x20 | 0x10 | 0 00 |
   │                                                       │  │      │      │      │      │      │      │      │    
   └─────────────────These are not used────────────────────┘  │      │      │      │      │      │      │      │    
