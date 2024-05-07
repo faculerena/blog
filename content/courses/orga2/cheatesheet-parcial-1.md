@@ -233,3 +233,7 @@ The mask in blend is `imm8`, so for example `01010101` (read from right to left)
 
 ## Solved problems
 - "Mirá que coincidencia" (greyscale pixels, blend, float to int, int to float, pack dword to word, word to byte): https://godbolt.org/z/Exaznxb78
+
+## Compare pixels
+(Tags: pixels, `pcmpgtb`)
+![[compare_pixels.jpeg]]
