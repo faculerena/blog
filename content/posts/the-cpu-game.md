@@ -6,7 +6,6 @@ tags:
 aliases:
   - The CPU Game
 ---
-# The CPU usage game
 [Repo](https://github.com/faculerena/cpu-usage-game)
 
 This "game" was born when `rustc` made my pc so slow that

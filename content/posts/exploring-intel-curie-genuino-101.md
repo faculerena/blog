@@ -10,9 +10,8 @@ aliases:
 ---
 *This is a work in progress.*
 
------------------------
+----------------
 
-# Exploring an Intel Curie board: Genuino 101.
 
 I'm doing Organización del Computador 2 (computer organization) course in UBA, and I remembered that a few years ago (probably 2016 or 2017), in an Arduino event in Buenos Aires I won a Genuino 101 board. Why is that relevant to the course? Is based on Intel x86 architecture, and so is the [Genuino 101](https://www.intel.com/content/www/us/en/products/sku/92346/genuino-101/specifications.html). 
 
