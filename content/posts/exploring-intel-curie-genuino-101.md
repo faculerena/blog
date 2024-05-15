@@ -1,11 +1,12 @@
 ---
-title: Exploring Intel Curie boards.
+title: "Exploring an Intel Curie board: Genuino 101"
 tags:
   - Orga2
   - project
   - Genuino101
   - WIP
 aliases:
+  - "Exploring an Intel Curie board: Genuino 101"
 ---
 *This is a work in progress.*
 

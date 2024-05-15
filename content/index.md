@@ -12,3 +12,4 @@ _Selama Ashal'anore_
 
 - [[the-cpu-game|The CPU Game]]
 - [[ai-is-reinventing-compilers|AI is reinventing compilers]]
+- [[exploring-intel-curie-genuino-101|Exploring an Intel Curie board: Genuino 101]]
