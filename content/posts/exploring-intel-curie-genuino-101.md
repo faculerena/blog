@@ -27,9 +27,7 @@ A few hours into this I discovered that Genuino and Arduino are the same thing b
 
 We are writing a kernel. I have an x86 targeted to makers. I found the [101 original firmware](https://web.archive.org/web/20191118204203/http://downloadcenter.intel.com/download/25832/Arduino-101-Firmware-Package-1-0). SOMETHING can be done here, I just don't know what yet. 
 
-I would like to run that kernel outside QEMU, on real hardware. It could be a cool final project for the course. It may work, or it may not, but I want to try.
-
-In the worst case I will learn a few things about the Curie chips and why Intel left the maker space, toy with a cool board and maybe run something on it (someone mentioned Doom).
+I would like to run that kernel outside QEMU, on real hardware. It could be a cool final project for the course. It may work, or it may not, but I want to try. In the worst case I will learn a few things about the Curie chips and why Intel left the maker space, toy with a cool board and maybe run something on it (someone mentioned Doom).
 
 
 ## The other idea (the weird one)
