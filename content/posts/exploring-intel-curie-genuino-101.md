@@ -58,3 +58,11 @@ https://docs.arduino.cc/retired/boards/arduino-101-619/
 https://dl.acm.org/doi/full/10.1145/3538644
 
 https://github.com/V33RU/IoTSecurity101
+
+https://forum.dd-wrt.com/phpBB2/viewtopic.php?t=69441&postdays=0&postorder=asc&start=0
+
+https://github.com/arduino/OpenOCD
+
+https://electronics.stackexchange.com/questions/9258/is-it-possible-to-make-a-jtag-interface-with-an-arduino
+
+https://balau82.wordpress.com/2014/08/10/jtagduino-jtag-connection-using-arduino/
