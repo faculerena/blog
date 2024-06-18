@@ -6,7 +6,7 @@ _Selama Ashal'anore_
 
 ## Organizacion del computador 2
 
-- [[cheatesheet-parcial-1|Cheatsheet Parcial 1]]
+- [[cheatsheet-parcial-1|Cheatsheet Parcial 1]]
 
 ## Blogposts
 
