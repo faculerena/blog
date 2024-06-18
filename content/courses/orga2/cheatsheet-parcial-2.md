@@ -23,6 +23,7 @@ aliases:
 ![[Segmentacion.png]]
 
 Segment selector
+
 ![[segment_selector.png]]
 
 **CS:** Code segment
@@ -32,6 +33,7 @@ Segment selector
 **GS & FS:** General purpose segments
 
 Segment descriptor
+
 ![[segment_descriptor.png]]
 
 ### Pasar a modo protegido
@@ -50,6 +52,7 @@ JMP <selector>:<offset>
 ## Interrupciones
 ![[big_picture_IDT_resaltada.png]]
 ![[stack_pre_post_interrupt.png]]![[interrupt_gate.png]]
+
 
 - **Offset** que va a ser la dirección de memoria donde comienza la rutina de atención de interrupción. 
 - **Segment selector** que indica qupe selector debe utilizarse al ejecutar el código de la rutina. 
@@ -106,6 +109,7 @@ int 0xA
 # Info dump
 
 Address virtual a física
+
 
 ![[virt-to-phys.png]]
 
