@@ -108,3 +108,8 @@ int 0xA
 Address virtual a física
 
 ![[virt-to-phys.png]]
+
+## Apuntes de otros
+- [Tomi](https://los-apuntes-de-tomi.vercel.app/organizacion-del-computador-ii/)
+- [Grunt](https://apuntes.grunt.ar/s/4LVufEPMR)
+- [Soluciones Mega y Maca](https://docs.google.com/presentation/d/1FG6PVF_35VDe38Lu1kAgXhPWviycR66Ca3Jd2mfiKg4/edit#slide=id.g211ce76c629_0_9)
